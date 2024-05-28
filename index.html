@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_Bookmarker</title>
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon" />
+    <!-- fontasowem -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrab -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- css-style -->
+    <link rel="stylesheet" href="css/index-style.css" />
+  </head>
+  <body>
+
+    <h2 id="time" class="text-white me-3 mt-3 d-flex justify-content-end"></h2>
+
+    <!-- Header -->
+    <section class="container">
+      <div>
+        <h1 class="logo flicker-5">BookMarker</h1>
+        <p class="data text-capitalize">
+          <span
+            ><i class="fa-solid fa-bookmark" style="color: #080808"></i
+          ></span>
+          Bookmark your favorite sites
+          <span
+            ><i class="fa-solid fa-bookmark" style="color: #080808"></i
+          ></span>
+        </p>
+      </div>
+    </section>
+
+    <main class="container pt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="" class="text-white"> Site Name</label>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-book-bookmark"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bookmark Name Here ..."
+              aria-label="BookmarkName"
+              aria-describedby="addon-wrapping"
+              id="bookmarkName"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="" class="text-white"> Site URL </label>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-link"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Website URL Here ..."
+              aria-label="BookmarkName"
+              aria-describedby="addon-wrapping"
+              id="bookmarkURL"
+            />
+          </div>
+        </div>
+        <button
+          id="submitBtn"
+          type="button"
+          class="btn btn-outline-light w-25 mt-5 m-auto"
+        >
+          Submit
+        </button>
+      </div>
+    </main>
+    <section class="container mt-4">
+     <div class="">
+      <div class="border rounded-3 border-white p-5">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th class="bg-transparent text-white">index</th>
+              <th class="bg-transparent text-white">Website Name</th>
+              <th class="bg-transparent text-white">Visit</th>
+              <th class="bg-transparent text-white">Edit</th>
+              <th class="bg-transparent text-white">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableContent"></tbody>
+        </table>
+      </div>
+     </div>
+    </section>
+
+    <div class="box-info d-none">
+      <div class="modal-content">
+        <p>Please enter valid data!</p>
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Main.js"></script>
+  </body>
+</html>

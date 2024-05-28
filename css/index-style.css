@@ -1,0 +1,90 @@
+
+
+
+
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 20% 80%),
+    url(../images/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.container .logo {
+  margin-top: 25px;
+  text-align: center;
+  color: beige;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 75px; /* Use a specific value */
+}
+/* .flicker-5 {
+  animation: flicker-5 10s linear infinite both;
+} */
+.data {
+  background-image: url(../images/serenity-and-peace-with-this-breathtaking-4k-wallpaper-depicting-a-tranquil-natural-landscape-free-photo.jpeg);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  text-align: center;
+  color: transparent;
+  font-size: 24px;
+  position: relative;
+  z-index: 1; /* Ensure the text is above the pseudo-element */
+}
+
+.data::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background-color: rgb(2, 2, 2);
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+  .btn{ color: black;}
+
+  .btn:hover{color: wheat;background-color: black;}
+
+
+
+
+  /* table table-bordered bg-transparent  */
+
+
+  @media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .data {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
